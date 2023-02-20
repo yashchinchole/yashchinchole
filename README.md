@@ -1,7 +1,7 @@
 <h1 align="center">Hi 🍺, I'm YASH CHINCHOLE</h1>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yashchinchole&label=Profile%20Views&color=66ff00&style=flat" alt="yashchinchole" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=yashchinchole" alt="yashchinchole" /></a> </p>
+<!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=yashchinchole" alt="yashchinchole" /></a> </p> -->
 
 <p align="left"> <a href="https://twitter.com/iamyash337" target="blank"><img src="https://img.shields.io/twitter/follow/iamyash337?logo=twitter&style=for-the-badge" alt="iamyash337" /></a> </p>
 
