@@ -2,9 +2,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yashchinchole&label=Profile%20Views&color=66ff00&style=flat" alt="yashchinchole" /> </p>
 
-<h3>
 📧 :  **iamyash337@gmail.com**
-</h3>
 
 <h2 align="left">Connect With Me :</h2>
 <p align="left">
