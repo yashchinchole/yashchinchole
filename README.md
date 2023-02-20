@@ -1,9 +1,10 @@
 <h1 align="center">Hi 🤙🏻, I'm YASH</h1>
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yashchinchole&label=Profile%20Views&color=66ff00&style=flat" alt="yashchinchole" /> </p>
-<hr>
+<br>
 
 📧 :  **iamyash337@gmail.com**
-<hr>
+<br>
 
 <h2 align="left">Connect With Me:</h3>
 <p align="left">
@@ -15,13 +16,12 @@
 <h2 align="left">Languages & Tools:</h3>
 
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,python,html,css,js,react,nodejs,mongo,java,spring,git,github)](https://skillicons.dev)
-<hr>
+<br>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=yashchinchole&show_icons=true&theme=dark&text_color=0064fa&locale=en" alt="yashchinchole" /></p>
-<hr>
+<br>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=yashchinchole&theme=dark" alt="yashchinchole" /></p>
-<hr>
+<br>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=yashchinchole&show_icons=true&theme=dark&text_color=0064fa&locale=en&layout=compact" alt="yashchinchole" /></p>
-<hr>
