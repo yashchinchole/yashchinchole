@@ -16,6 +16,8 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=yashchinchole&theme=dark" alt="yashchinchole" /></p>
 
+(https://github-readme-activity-graph.cyclic.app/graph?username=yashchinchole&theme=react-dark)
+
 <!-- <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=yashchinchole&show_icons=true&theme=dark&text_color=0064fa&locale=en" alt="yashchinchole" /></p><hr>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=yashchinchole&show_icons=true&theme=dark&text_color=0064fa&locale=en&layout=compact" alt="yashchinchole" /></p> -->
