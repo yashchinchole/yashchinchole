@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+    font-family: Comic Neue, cursive;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+
+body {
+    background-color: #121212;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: azure;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: purple;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+/* resusable css start */
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.heading span {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #52389b;
+}
+
+.heading h3 {
+    font-size: 3rem;
+    color: #130f40;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.7rem 2.8rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #f7f6f9;
+    background: linear-gradient(135deg, #494262, #6e6592);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6e6592, #494262);
+}
+
+/* resusable css end */
+
+/* header section start */
+
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #f7f6f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.header .logo i {
+    padding-right: .5rem;
+    color: #494262;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #383347;
+    transition: all .4s ease-in-out;
+}
+
+.header .navbar a:hover {
+    color: #52389b;
+}
+
+.header .icons {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.header .icons div {
+    height: 3.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background: #edecf2;
+    color: #130f40;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.header .icons div:hover {
+    background: #d8d5e2;
+}
+
+#menu-btn {
+    display: none;
+}
+
+/* header section end */
+
+@-webkit-keyframes fadeUp {
+    0% {
+        -webkit-transform: translate(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        -webkit-transform: translate(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+/* home section start */
+
+.home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: #f7f6f9;
+    border-radius: 1rem;
+    margin: 1% 2%;
+}
+
+.home .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 41rem;
+    flex: 1 1 41rem;
+}
+
+.home .content span {
+    font-size: 2rem;
+    color: red;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    color: #130f40;
+    padding-top: 1rem;
+}
+
+.home .content p {
+    font-size: 1.4rem;
+    color: #494262;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+/* home section end */
+
+
+/* projects section start */
+
+.projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: #f7f6f9;
+    border-radius: 4rem;
+    margin: 2% 10%;
+}
+
+.projects .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 41rem;
+    flex: 1 1 41rem;
+}
+
+.projects .content h2 {
+    display: flex;
+    gap: 2rem;
+    font-size: 3rem;
+    color: red;
+}
+
+.projects .content h3 {
+    font-size: 2rem;
+    color: black;
+    padding-top: 1rem;
+}
+
+.projects .content p {
+    font-size: 1.4rem;
+    color: #494262;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+/* projects section end */
