@@ -1,9 +1,11 @@
+// Explain Code and what is functionality
+
 import java.io.*;
 import java.net.*;
 
 public class selectiveRepeatServer {
 
-    static ServerSocket ss; 
+    static ServerSocket ss;
     static DataInputStream din;
     static DataOutputStream dout;
     
@@ -14,7 +16,7 @@ public class selectiveRepeatServer {
             
             ss = new ServerSocket(8011);
             System.out.println("Waiting for Connection");
-            
+
             Socket client = ss.accept();
             din = new DataInputStream(client.getInputStream());
             dout = new DataOutputStream(client.getOutputStream());
