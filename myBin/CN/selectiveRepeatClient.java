@@ -36,7 +36,7 @@ public class selectiveRepeatClient {
                     out.write(n);
                     out.flush();
                 }
-                
+
             System.out.println();
             v[n] = in.read();
             System.out.println("Received frame is: " + v[n]);

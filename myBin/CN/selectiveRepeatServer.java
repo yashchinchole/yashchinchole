@@ -1,5 +1,3 @@
-// Explain Code and what is functionality
-
 import java.io.*;
 import java.net.*;
 
@@ -8,12 +6,12 @@ public class selectiveRepeatServer {
     static ServerSocket ss;
     static DataInputStream din;
     static DataOutputStream dout;
-    
+
     public static void main(String[] args) throws SocketException {
         try {
             int a[] = { 30, 40, 50, 60, 70, 80, 90, 100 };
             int l = a.length;
-            
+
             ss = new ServerSocket(8011);
             System.out.println("Waiting for Connection");
 
