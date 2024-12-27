@@ -3,4 +3,4 @@
 
 <h2 align="left"><a href="https://yashchinchole.vercel.app/" target="blank">Personal Website 🌐</a></h2>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=yashchinchole&theme=github-dark)](https://git.io/streak-stats)
+[![yashchinchole](https://streak-stats.demolab.com?user=yashchinchole&theme=github-dark)](https://github.com/yashchinchole)
