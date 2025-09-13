@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/server.js", "use": "@vercel/node" },
+    { "src": "assets/**", "use": "@vercel/static" },
+    { "src": "skills.json", "use": "@vercel/static" },
+    { "src": "projects.json", "use": "@vercel/static" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "blog.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/env.js", "dest": "/api/server.js" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}

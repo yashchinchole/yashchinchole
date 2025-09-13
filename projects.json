@@ -1,0 +1,131 @@
+[
+  {
+    "title": "AgentHub",
+    "about": "Full-stack, multi-agent AI assistant platform for chat, documents, SQL, and research workflows using LangChain, LangGraph, FastAPI, and Streamlit, enabling configurable, production-ready agent orchestration.",
+    "img": "./assets/images/projects/agenthub.png",
+    "github": "https://github.com/yashchinchole/AgentHub",
+    "website": "http://3.88.134.213:8501/"
+  },
+  {
+    "title": "RAG-Medical-Chatbot",
+    "about": "RAG-based medical assistant that retrieves trusted clinical context and generates helpful answers using embeddings, vector search, and LLMs; built with LangChain, FAISS, and Streamlit.",
+    "img": "./assets/images/projects/rag-medical-chatbot.png",
+    "github": "https://github.com/yashchinchole/RAG-Medical-Chatbot"
+  },
+  {
+    "title": "AI-Doctor",
+    "about": "AI-powered medical assistant offering symptom triage and health insights with classic ML and LLM pipelines, emphasizing explainable predictions and structured inputs for faster screening support.",
+    "img": "./assets/images/projects/ai-doctor.png",
+    "github": "https://github.com/yashchinchole/AI-Doctor"
+  },
+  {
+    "title": "OMR-Sheet-Evaluation-System",
+    "about": "Developed cost-effective OMR System using OpenCV, automating grading through advanced image processing for accurate evaluations with clear, actionable feedback for students and administrators.",
+    "img": "./assets/images/projects/omr.png",
+    "github": "https://github.com/yashchinchole/OMR-Sheet-Evaluation-System",
+    "website": "https://omr-sheet-evaluation-system.onrender.com/"
+  },
+  {
+    "title": "Anime-Recommender-System",
+    "about": "RAG-powered anime recommender using LangChain pipelines, embeddings, and vector search, deployed with FastAPI backend and Streamlit interface.",
+    "img": "./assets/images/projects/anime-recommender-system.png",
+    "github": "https://github.com/yashchinchole/Anime-Recommender-System"
+  },
+  {
+    "title": "AI-PDF-Chatbot-and-Agent",
+    "about": "Chat with PDFs using RAG and tools; supports multi-document ingestion, chunking, embeddings, and agent tools via LangChain and Groq, deployed with Streamlit for seamless interactive exploration.",
+    "img": "./assets/images/projects/ai-pdf-chatbot-and-agent.png",
+    "github": "https://github.com/yashchinchole/AI-PDF-Chatbot-and-Agent",
+    "website": "https://ai-pdf-chatbot-and-agent.streamlit.app/"
+  },
+  {
+    "title": "AI-Agent-Chatbot",
+    "about": "Modular agentic chatbot with tool-use, retrieval, and function calling via LangChain, enabling goal-oriented conversations, web/retrieval actions, and extensible skills for real-world automation.",
+    "img": "./assets/images/projects/ai-agent-chatbot.png",
+    "github": "https://github.com/yashchinchole/AI-Agent-Chatbot"
+  },
+  {
+    "title": "T20-World-Cup-Data-Analytics",
+    "about": "Created a Power BI report to identify the top 11 players for a T20 cricket team by scraping data from ESPNCricinfo and evaluating performance metrics.",
+    "img": "./assets/images/projects/t20.jpg",
+    "github": "https://github.com/yashchinchole/T20-World-Cup-Cricket-Data-Analytics"
+  },
+  {
+    "title": "Car-Parking-Space-Counter",
+    "about": "The Car Parking Space Counter uses computer vision to detect and count parked vehicles, providing real-time updates on available parking spaces.",
+    "img": "./assets/images/projects/car.png",
+    "github": "https://github.com/yashchinchole/Car-Parking-Space-Counter"
+  },
+  {
+    "title": "Portfolio-Website",
+    "about": "Responsive portfolio website showcasing projects and skills, built with HTML, CSS, and JavaScript for optimal performance and user experience.",
+    "img": "./assets/images/projects/pf.png",
+    "github": "https://github.com/yashchinchole/portfolio-website",
+    "website": "https://yashchinchole.vercel.app/"
+  },
+  {
+    "title": "Diabetes-Prediction",
+    "about": "This project predicts diabetes using features like pregnancies, insulin, age, and BMI, sourced from Kaggle and employing a random forest classifier for accurate prediction.",
+    "img": "./assets/images/projects/diabetes.png",
+    "github": "https://github.com/yashchinchole/Diabetes-Prediction"
+  },
+  {
+    "title": "Forest-Fire-Prediction",
+    "about": "Flask-based regression app predicting Fire Weather Index (FWI) from Algerian forest data, featuring cleaned pipeline and saved model artifacts for reliable, reproducible inference.",
+    "img": "./assets/images/projects/algerian-forest-fire-prediction.png",
+    "github": "https://github.com/yashchinchole/Algerian-Forest-Fire-Prediction-using-Regression"
+  },
+  {
+    "title": "Download-GeeksforGeeks-Articles",
+    "about": "Developed Streamlit app enables users to download GeeksForGeeks articles as PDFs using their article URLs.",
+    "img": "./assets/images/projects/gfg-article.png",
+    "github": "https://github.com/yashchinchole/Download-GeeksforGeeks-Articles",
+    "website": "https://download-geeksforgeeks-articles.onrender.com/"
+  },
+  {
+    "title": "Movie-Review",
+    "about": "Movie review website that allows users to search for movies and view their details, including ratings and overviews.",
+    "img": "./assets/images/projects/movie-review.png",
+    "github": "https://github.com/yashchinchole/movie-review",
+    "website": "https://yashchinchole.github.io/Movie-Review/"
+  },
+  {
+    "title": "QR-Code-Generator",
+    "about": "Created Streamlit app allows users to generates a QR code for a given URL.",
+    "img": "./assets/images/projects/qr.png",
+    "github": "https://github.com/yashchinchole/QR-Code-Generator",
+    "website": "https://qr-code-generator-gibv.onrender.com/"
+  },
+  {
+    "title": "Game-2048",
+    "about": "2048 is a sliding puzzle game where players merge tiles to reach the 2048 tile.",
+    "img": "./assets/images/projects/2048.png",
+    "github": "https://github.com/yashchinchole/Game-2048",
+    "website": "https://yashchinchole.github.io/Game-2048/"
+  },
+  {
+    "title": "Simon-Game",
+    "about": "Classic Simon game implementation where players must remember and repeat sequences of colors.",
+    "img": "./assets/images/projects/simon.png",
+    "github": "https://github.com/yashchinchole/Simon-Game",
+    "website": "https://yashchinchole.github.io/Simon-Game/"
+  },
+  {
+    "title": "Stopwatch-Timer",
+    "about": "This C++ programming project creates a stopwatch/timer application with start, stop, and reset functionalities.",
+    "img": "./assets/images/projects/stopwatch.png",
+    "github": "https://github.com/yashchinchole/Stopwatch-Timer"
+  },
+  {
+    "title": "Rock-Paper-Scissors",
+    "about": "This C programming project implements a simple Rock-Paper-Scissors game where the user plays against the computer.",
+    "img": "./assets/images/projects/rps.png",
+    "github": "https://github.com/yashchinchole/Rock-Paper-Scissors"
+  },
+  {
+    "title": "Guessing-Game",
+    "about": "This C programming project involves creating a number guessing game where the player tries to guess a randomly generated number within a specified range.",
+    "img": "./assets/images/projects/number.png",
+    "github": "https://github.com/yashchinchole/Number-Guessing"
+  }
+]

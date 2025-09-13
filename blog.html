@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Chinchole</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/yash.jpg" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="padding: 20px; max-width: 900px; margin: auto;">
+        <a href="index.html#blogs" class="btn" style="margin-bottom:20px;">
+            <i class="fas fa-arrow-left"></i> Back to Blogs
+        </a>
+
+        <div id="blog-detail" style="background: var(--input-background); padding: 20px; border-radius: 12px;">
+            <h1 id="blog-title" style="margin-bottom: 12px;"></h1>
+            <div id="blog-meta" style="margin-bottom: 16px; color: var(--color-keywords);"></div>
+            <div id="blog-content" style="line-height: 1.6; font-size: 1rem; color: var(--foreground);"></div>
+            <div style="margin-top: 20px;">
+                <button id="upvoteBtn" class="btn">
+                    <i class="fas fa-arrow-up"></i> <span id="upvoteCount">0</span> Upvotes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+    <!-- Server-provided env -->
+    <script src="/env.js"></script>
+    <!-- Config mapper -->
+    <script src="./assets/js/config.js"></script>
+
+    <!-- Marked.js for Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+        marked.setOptions({
+            breaks: true,
+            highlight: function (code, lang) {
+                return hljs.highlightAuto(code, [lang]).value;
+            }
+        });
+    </script>
+
+    <!-- Blog detail script -->
+    <script src="./assets/js/blog-detail.js"></script>
+</body>
+
+</html>

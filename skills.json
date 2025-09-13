@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Python",
+    "icon": "assets/icons/icons8-python.svg"
+  },
+  {
+    "name": "LangChain",
+    "icon": "assets/icons/langchain.svg"
+  },
+  {
+    "name": "LangGraph",
+    "icon": "assets/icons/langgraph.svg"
+  },
+  {
+    "name": "LangSmith",
+    "icon": "assets/icons/langsmith.svg"
+  },
+  {
+    "name": "MCP",
+    "icon": "assets/icons/mcp.svg"
+  },
+  {
+    "name": "Pydantic",
+    "icon": "assets/icons/pydanticai.svg"
+  },
+  {
+    "name": "OpenAI",
+    "icon": "assets/icons/openai.svg"
+  },
+  {
+    "name": "Claude",
+    "icon": "assets/icons/claude.svg"
+  },
+  {
+    "name": "Gemini",
+    "icon": "assets/icons/gemini.svg"
+  },
+  {
+    "name": "Groq",
+    "icon": "assets/icons/groq.svg"
+  },
+  {
+    "name": "Ollama",
+    "icon": "assets/icons/ollama.svg"
+  },
+  {
+    "name": "HuggingFace",
+    "icon": "assets/icons/huggingface.svg"
+  },
+  {
+    "name": "FastAPI",
+    "icon": "assets/icons/fastapi-svgrepo-com.svg"
+  },
+  {
+    "name": "Flask",
+    "icon": "assets/icons/flask-svgrepo-com.svg"
+  },
+  {
+    "name": "Streamlit",
+    "icon": "assets/icons/streamlit-mark-dark.svg"
+  },
+  {
+    "name": "Gradio",
+    "icon": "assets/icons/gradio.svg"
+  },
+  {
+    "name": "SQL",
+    "icon": "assets/icons/sql-file-format-symbol-svgrepo-com.svg"
+  },
+  {
+    "name": "PowerBI",
+    "icon": "assets/icons/powerbi-svgrepo-com.svg"
+  },
+  {
+    "name": "Pandas",
+    "icon": "https://img.icons8.com/color/48/pandas.png"
+  },
+  {
+    "name": "NumPy",
+    "icon": "https://img.icons8.com/color/48/numpy.png"
+  },
+  {
+    "name": "Matplotlib",
+    "icon": "https://img.icons8.com/color/48/matplotlib.png"
+  },
+  {
+    "name": "Seaborn",
+    "icon": "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg"
+  },
+  {
+    "name": "Scikit-learn",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+  },
+  {
+    "name": "C",
+    "icon": "https://img.icons8.com/color/48/c-programming.png"
+  },
+  {
+    "name": "C++",
+    "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+  },
+  {
+    "name": "Java",
+    "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+  },
+  {
+    "name": "HTML",
+    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+  },
+  {
+    "name": "CSS",
+    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+  },
+  {
+    "name": "Node.js",
+    "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+  },
+  {
+    "name": "Express.js",
+    "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+  },
+  {
+    "name": "Git",
+    "icon": "https://img.icons8.com/color/48/000000/git.png"
+  },
+  {
+    "name": "GitHub",
+    "icon": "assets/icons/github.svg"
+  },
+  {
+    "name": "Notebook",
+    "icon": "https://img.icons8.com/fluency/48/jupyter.png"
+  },
+  {
+    "name": "VS Code",
+    "icon": "https://img.icons8.com/color/48/visual-studio-code-2019.png"
+  }
+]
