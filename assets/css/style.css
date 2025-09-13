@@ -973,6 +973,15 @@ h4.my-profession .position {
 
   .btn {
     padding: 10px 20px;
+    font-size: 14px;
+    /* Smaller button text */
+  }
+
+  p,
+  li,
+  span {
+    font-size: 14px;
+    /* Small general text */
   }
 }
 
@@ -999,6 +1008,13 @@ h4.my-profession .position {
     max-width: 100%;
     margin-bottom: 15px;
   }
+
+  p,
+  li,
+  span {
+    font-size: 12px;
+    /* Even smaller general text on very small devices */
+  }
 }
 
 @media (max-width: 768px) {
@@ -1022,6 +1038,13 @@ h4.my-profession .position {
   .projects-item {
     width: 100%;
     margin: 15px 0;
+  }
+
+  p,
+  li,
+  span {
+    font-size: 13px;
+    /* Smaller general text for small devices */
   }
 }
 
@@ -1049,13 +1072,20 @@ h4.my-profession .position {
   .blog-card-actions .btn {
     flex: 1;
     text-align: center;
+    font-size: 14px;
+    /* Smaller button text */
   }
-}
 
-@media (max-width: 600px) {
   .author-name {
     display: none;
   }
+
+  p,
+  li,
+  span {
+    font-size: 13px;
+  }
 }
+
 
 /* Device Responsive Section End */
