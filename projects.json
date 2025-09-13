@@ -39,6 +39,13 @@
     "website": "https://ai-pdf-chatbot-and-agent.streamlit.app/"
   },
   {
+    "title": "Blogs",
+    "about": "Personal technical blog platform where I share my learnings, experiences, and thoughts on data science, AI, development, and engineering concepts.",
+    "img": "./assets/images/projects/blogs-yashchinchole.png",
+    "github": "https://github.com/yashchinchole/Blogs-yashchinchole",
+    "website": "https://blogs-yashchinchole.vercel.app"
+  },
+  {
     "title": "AI-Agent-Chatbot",
     "about": "Modular agentic chatbot with tool-use, retrieval, and function calling via LangChain, enabling goal-oriented conversations, web/retrieval actions, and extensible skills for real-world automation.",
     "img": "./assets/images/projects/ai-agent-chatbot.png",

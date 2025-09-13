@@ -136,30 +136,34 @@
     const previewHtml = getSafePreview(blog);
 
     return `
-      <div class="projects-item blog-card" style="width:100%; margin:8px 0; padding:16px; border-radius:8px; background:var(--input-background);">
-        <h3 style="color:var(--color-class-name); margin-bottom:8px;">
-          ${escapeHtml(blog.title)}
-        </h3>
-        <div class="markdown-body" style="margin-bottom:10px; color:var(--foreground);">
-          ${previewHtml}
-        </div>
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <div style="color:var(--color-keywords)">
-            ${escapeHtml(blog.author?.name || "Unknown")} • ${date}
-          </div>
-          <div>
-            <button class="btn upvote-btn ${upClass}" data-blog-id="${blog.id}">
-              <i class="fas fa-arrow-up"></i> <span>${blog.upvotes || 0}</span>
-            </button>
-            <button class="btn btn-outline-primary read-more-btn" data-blog-id="${
-              blog.id
-            }">
-              Read More
-            </button>
-          </div>
+    <div class="projects-item blog-card">
+      <h3 class="blog-title">${escapeHtml(blog.title)}</h3>
+      
+      <div class="markdown-body blog-preview">
+        ${previewHtml}
+      </div>
+      
+      <div class="blog-card-footer">
+        <!-- Author can be hidden on mobile via CSS -->
+        <span class="blog-meta">
+          <span class="author-name">${escapeHtml(
+            blog.author?.name || "Unknown"
+          )}</span>
+          <span class="blog-date">${date}</span>
+        </span>
+        
+        <div class="blog-card-actions">
+          <button class="btn upvote-btn ${upClass}" data-blog-id="${blog.id}">
+            <i class="fas fa-arrow-up"></i>
+            <span class="upvote-count">${blog.upvotes || 0}</span>
+          </button>
+          <button class="btn read-more-btn" data-blog-id="${blog.id}">
+            Read More
+          </button>
         </div>
       </div>
-    `;
+    </div>
+  `;
   }
 
   // --- UPVOTES ---

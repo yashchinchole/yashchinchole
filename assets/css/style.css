@@ -863,6 +863,40 @@ h4.my-profession .position {
   z-index: 1;
 }
 
+/* Fix button hover inside blogs */
+.blog-card .btn,
+.blog-inline .btn {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1.2;
+  height: 28px;
+  /* lock height */
+  min-width: 60px;
+  /* consistent size */
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.blog-card .btn:hover,
+.blog-inline .btn:hover {
+  transform: none !important;
+  /* cancel zoom */
+  box-shadow: none !important;
+  opacity: 0.9;
+  /* only subtle effect */
+}
+
+.section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section.active {
+  display: block;
+  opacity: 1;
+}
+
 /* Device Responsive Section Start */
 @media (max-width: 1190px) {
   .aside {
@@ -988,6 +1022,39 @@ h4.my-profession .position {
   .projects-item {
     width: 100%;
     margin: 15px 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Hide author name on mobile */
+  .blog-card-footer .author-name {
+    display: none;
+  }
+
+  /* Stack footer content */
+  .blog-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  /* Make buttons take full width if needed */
+  .blog-card-actions {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .blog-card-actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .author-name {
+    display: none;
   }
 }
 
