@@ -9,32 +9,68 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/yash.jpg" />
-    <!-- Google Font -->
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container" style="padding: 20px; max-width: 900px; margin: auto;">
-        <a href="index.html#blogs" class="btn" style="margin-bottom:20px;">
-            <i class="fas fa-arrow-left"></i> Back to Blogs
-        </a>
+    <div>
 
-        <div id="blog-detail" style="background: var(--input-background); padding: 20px; border-radius: 12px;">
-            <h1 id="blog-title" style="margin-bottom: 12px;"></h1>
-            <div id="blog-meta" style="margin-bottom: 16px; color: var(--color-keywords);"></div>
-            <div id="blog-content" style="line-height: 1.6; font-size: 1rem; color: var(--foreground);"></div>
-            <div style="margin-top: 20px;">
-                <button id="upvoteBtn" class="btn">
-                    <i class="fas fa-arrow-up"></i> <span id="upvoteCount">0</span> Upvotes
-                </button>
+        <!-- Sidebar (same as index.html) -->
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html"><span>Yash</span></a>
             </div>
+            <div class="nav-toggler"><i class="fas fa-bars"></i></div>
+            <ul class="nav">
+                <li><a href="index.html#home"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="index.html#experience"><i class="fa fa-briefcase"></i> Experience</a></li>
+                <li><a href="index.html#skills"><i class="fa fa-list"></i> Skills</a></li>
+                <li><a href="index.html#projects"><i class="fa fa-code"></i> Projects</a></li>
+                <li><a href="index.html#achievements"><i class="fa-solid fa-medal"></i> Achievements</a></li>
+                <li><a href="index.html#blogs" class="active"><i class="fas fa-file-lines"></i> Blogs</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/yashchinchole/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yashchinchole" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://medium.com/@yashchinchole" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://www.instagram.com/yashchinchole/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <section class="blog-detail-section section active">
+                <div class="container" style="padding: 20px; max-width: 900px; margin: auto;">
+
+                    <!-- Back button -->
+                    <a href="index.html#blogs" id="back-to-blogs">
+                        <i class="fas fa-arrow-left"></i> Back to Blogs
+                    </a>
+
+                    <!-- Blog detail -->
+                    <div id="blog-detail">
+                        <h1 id="blog-title"></h1>
+                        <div id="blog-meta"></div>
+                        <div id="blog-content" class="markdown-body"></div>
+
+                        <div style="margin-top: 20px;">
+                            <button id="upvoteBtn" class="btn">
+                                <i class="fas fa-arrow-up"></i>
+                                <span id="upvoteCount">0</span> Upvotes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 

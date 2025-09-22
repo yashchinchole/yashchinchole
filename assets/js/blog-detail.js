@@ -43,9 +43,8 @@
 
   function renderBlog(blog) {
     titleEl.textContent = blog.title;
-    metaEl.textContent = `${blog.author?.name || "Unknown"} • ${formatDate(
-      blog.createdAt
-    )}`;
+
+    metaEl.textContent = formatDate(blog.createdAt);
 
     if (blog.type === "markdown") {
       contentEl.innerHTML = marked.parse(blog.content || "");
@@ -66,14 +65,17 @@
       showToast("You already upvoted this blog", "warning");
       return;
     }
+
+    upvoteBtn.classList.add("upvoted");
+    let currentCount = parseInt(upvoteCountEl.textContent, 10) || 0;
+    upvoteCountEl.textContent = currentCount + 1;
+
     try {
       const newCount = (blogData.upvotes || 0) + 1;
       await database.ref(`blogs/${id}/upvotes`).set(newCount);
       blogData.upvotes = newCount;
-      upvoteCountEl.textContent = newCount;
       upvotedBlogs.push(id);
       localStorage.setItem("upvotedBlogs", JSON.stringify(upvotedBlogs));
-      upvoteBtn.classList.add("upvoted");
       showToast("Thanks for the like!", "success");
     } catch (err) {
       console.error("Upvote error:", err);
@@ -85,7 +87,7 @@
     try {
       return new Intl.DateTimeFormat("en-IN", {
         year: "numeric",
-        month: "short",
+        month: "long",
         day: "numeric",
         timeZone: "Asia/Kolkata",
       }).format(new Date(dateStr));

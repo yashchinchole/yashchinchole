@@ -56,6 +56,7 @@ function asideSectionTogglerBtn() {
   navTogglerBtn.classList.toggle("open");
 }
 
+// ---------------- Skills Loader ----------------
 document.addEventListener("DOMContentLoaded", () => {
   fetch("skills.json")
     .then((response) => {
@@ -99,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => console.error("Error loading skills:", error));
 });
 
+// ---------------- Projects Loader ----------------
 document.addEventListener("DOMContentLoaded", () => {
   fetch("projects.json")
     .then((response) => response.json())
@@ -133,4 +135,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch((error) => console.error("Error fetching projects:", error));
+});
+
+// ---------------- Section Loader ----------------
+window.addEventListener("load", () => {
+  let hash = window.location.hash;
+
+  if (sessionStorage.getItem("openBlogsOnReturn") === "true") {
+    hash = "#blogs";
+    sessionStorage.removeItem("openBlogsOnReturn");
+  }
+
+  // clear all actives first
+  document
+    .querySelectorAll(".section")
+    .forEach((sec) => sec.classList.remove("active"));
+  document
+    .querySelectorAll(".nav a")
+    .forEach((a) => a.classList.remove("active"));
+
+  if (hash && document.querySelector(hash)) {
+    document.querySelector(hash).classList.add("active");
+    const navLink = document.querySelector(`.nav a[href="${hash}"]`);
+    if (navLink) navLink.classList.add("active");
+  } else {
+    document.querySelector("#home").classList.add("active");
+    const homeNav = document.querySelector('.nav a[href="#home"]');
+    if (homeNav) homeNav.classList.add("active");
+  }
 });

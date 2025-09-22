@@ -78,13 +78,22 @@
 
     blogsEmpty.style.display = "none";
 
-    // sort: top upvotes first, then latest
-    blogArray.sort((a, b) => {
-      const upA = a.upvotes || 0;
-      const upB = b.upvotes || 0;
-      if (upB !== upA) return upB - upA;
-      return new Date(b.createdAt) - new Date(a.createdAt);
-    });
+    // find the blog with the most upvotes
+    let topBlog = null;
+    if (blogArray.length > 0) {
+      topBlog = blogArray.reduce((prev, curr) => {
+        return (curr.upvotes || 0) > (prev.upvotes || 0) ? curr : prev;
+      });
+    }
+
+    // filter out the top blog from the rest
+    let restBlogs = blogArray.filter((b) => b.id !== topBlog.id);
+
+    // sort the rest by latest date
+    restBlogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+    // final array: top blog first, then the rest
+    blogArray = [topBlog, ...restBlogs];
 
     blogsContainer.innerHTML = blogArray.map(blogCardHtml).join("");
 
@@ -95,36 +104,6 @@
         handleUpvote(btn.dataset.blogId);
       });
     });
-
-    document.querySelectorAll(".read-more-btn").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const id = btn.dataset.blogId;
-        renderBlogInline(blogs[id]);
-      });
-    });
-  }
-
-  // --- INLINE FULL BLOG RENDER ---
-  function renderBlogInline(blog) {
-    blogsContainer.innerHTML = `
-      <div class="markdown-body" style="padding:20px; background:var(--input-background); border-radius:12px;">
-        <h2>${escapeHtml(blog.title)}</h2>
-        <div style="margin-bottom:10px; color:var(--color-keywords)">
-          ${escapeHtml(blog.author?.name || "Unknown")} • ${formatDate(
-      blog.createdAt
-    )}
-        </div>
-        <div>
-          ${
-            blog.type === "markdown"
-              ? marked.parse(blog.content || "")
-              : escapeHtml(blog.content || "")
-          }
-        </div>
-        <button class="btn" onclick="location.reload()">⬅ Back to Blogs</button>
-      </div>
-    `;
   }
 
   // --- BLOG CARD (PREVIEW) ---
@@ -144,7 +123,7 @@
       </div>
       
       <div class="blog-card-footer">
-        <!-- Author can be hidden on mobile via CSS -->
+        <!-- Author hidden via CSS if needed -->
         <span class="blog-meta">
           <span class="author-name">${escapeHtml(
             blog.author?.name || "Unknown"
@@ -157,9 +136,9 @@
             <i class="fas fa-arrow-up"></i>
             <span class="upvote-count">${blog.upvotes || 0}</span>
           </button>
-          <button class="btn read-more-btn" data-blog-id="${blog.id}">
+          <a href="blog.html?id=${blog.id}" class="btn read-more-btn">
             Read More
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -195,7 +174,7 @@
     try {
       return new Intl.DateTimeFormat("en-IN", {
         year: "numeric",
-        month: "short",
+        month: "long",
         day: "numeric",
         timeZone: "Asia/Kolkata",
       }).format(new Date(dateStr));
