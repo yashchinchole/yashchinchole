@@ -1171,3 +1171,94 @@ h4.my-profession .position {
 }
 
 /* Device Responsive Section End */
+
+/* Ensure consistent blog card width on mobile */
+@media (max-width: 600px) {
+  .blog-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin: 8px 0;
+  }
+
+  .blog-card .blog-preview,
+  .blog-card .blog-full-content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Ensure read more/less buttons don't change card width */
+  .blog-card .blog-card-actions {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Style upvote messages properly */
+.upvote-message {
+  color: var(--color-number) !important;
+  font-size: 0.8rem;
+  margin-top: 8px;
+  padding: 4px 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* Ensure consistent card transitions */
+.blog-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, width 0s !important;
+  will-change: transform;
+}
+
+/* Fix mobile width issues */
+@media (max-width: 480px) {
+  .blog-card {
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  .blog-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .blog-card-footer {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .blog-card-actions {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .blog-card-actions .btn {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+}
+
+/* Mobile responsiveness for contact form */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
