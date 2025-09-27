@@ -732,14 +732,14 @@ h4.my-profession .position {
 .upvote-btn {
   background: var(--input-background);
   border: 1px solid var(--border);
-  color: var(--color-keywords);
+  color: var(--input-foreground);
   transition: all 0.2s ease;
 }
 
 .upvote-btn.upvoted {
-  background: var(--color-quotes) !important;
+  /* background: var(--color-quotes) !important; */
   border: 1px solid var(--border);
-  color: var(--black);
+  color: var(--foreground);
 }
 
 /* ---------------- BLOG DETAIL PAGE ---------------- */
@@ -871,6 +871,16 @@ h4.my-profession .position {
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
   line-height: 1.3;
+}
+
+.blog-card .blog-preview {
+  height: 1.9em;
+  overflow: hidden;
+}
+
+.blog-card .blog-preview .markdown-body {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* Device Responsive Section Start */
