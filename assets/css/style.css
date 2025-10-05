@@ -737,7 +737,6 @@ h4.my-profession .position {
 }
 
 .upvote-btn.upvoted {
-  /* background: var(--color-quotes) !important; */
   border: 1px solid var(--border);
   color: var(--foreground);
 }
